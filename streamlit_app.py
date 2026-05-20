@@ -53,3 +53,10 @@ if ingredients_list:
 else:
 
     st.success('There are no pending orders right now', icon="👍")
+
+import requests  
+smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
+
+
+
